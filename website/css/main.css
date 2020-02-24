@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+}
+
+#nav {
+    background-color:darksalmon;
+}
+
+#left_container {
+    float:left;
+    width: 15%;
+    background-color: darkgray;
+}
+
+#center_container {
+    float:left;
+    background-color: azure;
+    width:70%;
+}
+
+#right_container {
+    float:left;
+    width: 15%;
+    background-color: darkgray;
+}
