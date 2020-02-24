@@ -4,10 +4,52 @@
         <meta name="keywords" content="komputery, programowanie, nauka">
         <meta name="description" content="Strona internetowa Tbl4h" >
         <title>Tbl4h -- strona domowa</title>
-        <link rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <h1>To jest strona internetowa tbl4h</p1>
-        <p1>Lubię komputery</p1>
+        <div id="left_container">
+
+        </div>
+
+        <div id="center_container">
+            <div class="main_post">
+                <h1 class="main_post_title">To jest strona internetowa tbl4h</h1>
+                <p1 class="main_post_content">Lubię komputery. Pierwszy komputer dostałem na komunię i tak mi już zostało.<br>
+                    Strona będzie posiadać formę bloga/prostej strony internetowej, którą sukcesywnie zamierzam rozwijać, <br>
+                    wraz ze wzrostem moich umiejętności webdev (ale na jakieś fajerwerki bym nie liczył).     
+                </p1>
+            </div>
+            <div class="post">
+                <h2 class="post_title">Git - zakłądanie repo.</h2>
+                <p1 class="post_content">Zakładanie repo lokalnie i push do repo zdalnego.
+                </p1>
+                        <ol>
+                           <li>git config --global user.name "tbl4h"</li> 
+                           <li>git config --global user.email przykładowy@email.com</li>
+                           <li>git init // wewnatrz katalogu naszego repo</li>
+                           <li>git add .
+                                <ul>
+                                    <li>git rm nazwa_pliku</li>
+                                </ul>
+                            </li>
+                            <li>git status // sprawdzenie czy wszystko ok</li>
+                            <li>git commit -m "przykładowa_tresc"</li>
+                            <li>git remote add origin https://github.com/tbl4h/nazwa_repo.git <br>
+                                // repo zdalne musi byc utworzone i miec tą samą nazwę.
+                                <ul>
+                                    <li>git remote remove origin</li>
+                                </ul>
+                            </li>
+                            <li>git push -u origin master</li>
+                        </ol>
+                <p1 class="post_content">Na koniec jeszcze link do podrecznika gita.<br>
+                <a href="https://git-scm.com/book/pl/v2">GIT po polsku.</a>
+                </p1>
+            </div>
+        </div>
+        
+        <div id="right_container">
+
+        </div>
     </body>
 </html>
