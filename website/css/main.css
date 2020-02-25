@@ -14,12 +14,21 @@ body{
 
 #center_container {
     float:left;
-    background-color: azure;
+    background-color: lightgrey;
     width:70%;
+
 }
 
 #right_container {
     float:left;
     width: 15%;
     background-color: darkgray;
+}
+
+.post {
+    border-color: black;
+    border-style: solid;
+    border-color: grey;
+    margin-bottom : 15px;
+    background-color: azure;
 }
