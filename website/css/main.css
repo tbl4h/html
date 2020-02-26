@@ -1,20 +1,28 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(87, 107, 100);
+    padding:0px;
+    margin:0px;
 }
 
 #nav {
-    background-color:darksalmon;
+    background-color:rgb(102, 133, 122);
+    margin:0px;
+    
+}
+
+.main_post {
+    text-align: center;
 }
 
 #left_container {
     float:left;
     width: 15%;
-    background-color: darkgray;
+    background-color: rgb(199, 89, 199);
 }
 
 #center_container {
     float:left;
-    background-color: lightgrey;
+    background-color: black;
     width:70%;
 
 }
@@ -22,13 +30,17 @@ body{
 #right_container {
     float:left;
     width: 15%;
-    background-color: darkgray;
+    background-color: rgb(199, 89, 199);
 }
 
 .post {
-    border-color: black;
     border-style: solid;
     border-color: grey;
     margin-bottom : 15px;
-    background-color: azure;
+    color: greenyellow;
+    font-size: 18px;
+}
+
+.post h2 {
+    color: lightblue;
 }

@@ -5,10 +5,10 @@
         <meta name="description" content="Strona internetowa Tbl4h" >
         <title>Tbl4h -- strona domowa</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="scripts/main.js"></script>
+        <script src="./scripts/main.js"></script>
     </head>
     <body>
-
+    <!--    NAV     -->
         <div id="nav">
             <div class="main_post">
                     <h1 class="main_post_title">To jest strona internetowa tbl4h</h1>
@@ -19,7 +19,7 @@
                     </p1>
             </div>
         </div>
-
+    <!--    LEFT CONTAINER   -->
         <div id="left_container" >
             <ul>
                 <li>
@@ -27,49 +27,67 @@
                 </li>
             </ul>
         </div>
-
+    
+    <!--    CENTER CONTAINER    -->
         <div id="center_container" >
 
-            <div class="post">
+            <div class="post tag-git">
                 <h2 class="post_title">Git - zakładanie repo.</h2>
                 <p1 class="post_content">Zakładanie repo lokalnie i push do repo zdalnego.
                 </p1>
                         <ol>
                            <li><code>git config --global user.name "tbl4h"</code></li> 
                            <li><code>git config --global user.email przykładowy@email.com</code></li>
-                           <li>git init // wewnatrz katalogu naszego repo</li>
-                           <li>git add .
+                           <li><code>git init</code> // wewnatrz katalogu naszego repo</li>
+                           <li><code>git add .</code>
                                 <ul>
-                                    <li>git rm nazwa_pliku</li>
+                                    <li><code>git rm nazwa_pliku</code></li>
                                 </ul>
                             </li>
-                            <li>git status // sprawdzenie czy wszystko ok</li>
-                            <li>git commit -m "przykładowa_tresc"</li>
-                            <li>git remote add origin https://github.com/tbl4h/nazwa_repo.git <br>
+                            <li><code>git status</code> // sprawdzenie czy wszystko ok</li>
+                            <li><code>git commit -m "przykładowa_tresc"</code></li>
+                            <li><code>git remote add origin https://github.com/tbl4h/nazwa_repo.git </code><br>
                                 // repo zdalne musi byc utworzone i miec tą samą nazwę.
                                 <ul>
-                                    <li>git remote remove origin</li>
+                                    <li><code>git remote remove origin</code></li>
                                 </ul>
                             </li>
-                            <li>git push -u origin master</li>
+                            <li><code>git push -u origin master</code></li>
                         </ol>
                 <p1 class="post_content">Na koniec jeszcze link do podrecznika gita.<br>
                 <a href="https://git-scm.com/book/pl/v2">GIT po polsku.</a>
                 </p1>
             </div>
 
-            <div class="post">
+            <div class="post tag-code">
                     <h2 class="post_title">Kilka drobnych rzeczy.</h1>
                     <p1 class="post_content">Uruchamianie pliku w VisualCode z terminala <br>
                         <code>code nazwa_pliku</code><br>
                         Wstawianie kodu źródłowego na strnie internetowej.<br>
                         <a href="https://highlightjs.org/">highlightjs.org</a>
                     </p1>
-                </div>
+            </div>
+
+            <div class="post tag-cpp">
+                    <h2 class="post_title">Przykładowy wpis z cpp</h1>
+                    <p1 class="post_content">CPP jest fajny</p1>
+            </div>
+
+            <div class="post tag-js tag-regex">
+                    <h2 class="post_title">Wyrażenia regularne w js.</h1>
+                    <p1 class="post_content">
+                        /.../ --> regexy umieszcz się pomiedzy znakami slash <br>
+                        \s --> wszystkie białe znaki <br>
+                        \S --> przeciwieństwo \s <br>
+                        + --> moze wystepować wiecej niż jeden znak np. /s+a+/ --> ssssaaa <br>
+                        ^ $ --> występuje na początku i końcu
+
+                    </p1>
+            </div>
         </div>
-        
+    <!--    RIGHT CONTAINER     -->
         <div id="right_container" >
-            <p1>Tekst</p1>
+            <p1>Tutaj będzie drzewo hierarchiczne.</p1>
         </div>
     </body>
 </html>
